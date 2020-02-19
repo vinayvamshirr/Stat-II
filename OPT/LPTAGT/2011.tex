@@ -1,0 +1,67 @@
+\section*{2011}
+\vspace{-.5cm}
+\hrulefill \smallskip\\
+\ques{1}{d}{12} Use simplex method to solve the following L.P.P :
+\begin{gather*}
+    \text{Maximize} \quad Z \:= \:x_1 - 2x_2 + 3x_3 \\
+    \begin{aligned}
+        \text{Subject to} \quad & x_1 + x_2 + x_3 & \leq 10 \\
+        & 2x_1 - x_3 & \leq 2 \\
+        & x_1 - 2x_2 + 3x_3 &\leq 0 \\
+        &x_1,\:x_2,\: x_3 \geq 0.
+    \end{aligned}
+\end{gather*}
+\myline
+\ques{2}{a}{10} Justify the use of artificial variables in obtaining L.P.P. When should slack and surplus variables be used for solving linear programming problem?
+\myline
+\ques{2}{c}{10} State the limitations of game theory. Following is the payoff matrix for players A and B. Using dominance property, obtain the optimum strategies for both the players and determine the value of the game:
+\begin{table}[!htbp]
+\centering
+	\begin{game}{4}{5}[Player A  ][Player B]
+   	    &  \romcaps{1}   &  \romcaps{2}  & \romcaps{3} & \romcaps{4} & \romcaps{5}   \\
+   	 \romcaps{1} &  $2$ & $4$ & $3$ & $8$ &$4$\\
+   	 \romcaps{2} &  $5$ & $6$ & $3$ & $7$ &$8$\\
+	 \romcaps{3} &  $6$ & $7$ & $9$ & $8$ & $7$\\
+	 \romcaps{4} &  $4$ & $2$ & $8$ & $4$ & $3$\\
+\end{game}
+\end{table}
+\myline
+\ques{3}{a}{25} Determine the optimal strategies for the game with the following pay-off matrix:
+\begin{table}[!htbp]
+\centering
+	\begin{game}{2}{3}[A][B]
+   	    &  \romcaps{1}   &  \romcaps{2}  & \romcaps{3}\\
+   	 \romcaps{1} &  $4$ & $3$ & $1$ \\
+   	 \romcaps{2} &  $0$ & $1$ & $2$ \\
+\end{game}
+\end{table}
+\newpage
+\ques{4}{a}{25} The following table shows all the necessary information on the available supply to each warehouse, the requirements for each market and the unit transportation cost from each warehouse to each market:
+\begin{table}[!htbp]
+\centering
+\begin{tabular}{cc|c|c|c|c|c|}
+\cline{3-6}
+& & \multicolumn{4}{ c| }{Market} \\ \cline{3-7}
+& & \romcaps{1} & \romcaps{2} & \romcaps{3} & \romcaps{4} & Supply\\ \cline{1-7}
+\multicolumn{1}{ |c|  }{\multirow{3}{*}{Powers}} &
+A & 5 & 2 & 4 & 3 & 22       \\\cline{2-7}
+\multicolumn{1}{|c|}{} &  B & 4 & 8 & 1 & 6 & 15 \\  \cline{2-7} 
+\multicolumn{1}{|c|}{} &  C & 4 & 6 & 7 & 5 & 8 \\ \cline{1-7}
+\multicolumn{2}{|c|}{Requirement} & 7 &12 & 17 & 9 \\ \cline{1-6}
+\end{tabular} 
+\end{table} \\
+The shipping clerk has worked out the following schedule from experience:
+\begin{itemize}[topsep=0pt, itemsep = -1ex,label ={}]
+    \centering
+    \item  12 units from $A$ to \romcaps{2}
+    \item  1 units from $A$ to \romcaps{3}
+    \item  9 units from $A$ to \romcaps{4}
+    \item  15 units from $B$ to \romcaps{3}
+    \item  1 units from $A$ to \romcaps{3}
+    \item  7 units from $A$ to \romcaps{1}
+\end{itemize}
+\begin{enumerate}[topsep =0pt, itemsep = -1ex,label = (\roman*)]
+    \item Check and verify if the clerk has optimal schedule.
+    \item Find the optimal schedule and the minimum total shipping cost.
+\end{enumerate}
+

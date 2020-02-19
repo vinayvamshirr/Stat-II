@@ -1,0 +1,17 @@
+\section*{2009}
+\vspace{-.5cm}
+\hrulefill \smallskip\\
+\ques{1}{c}{12} In a life test with replacement, 35 heaters were put into continuous operation and the first five failures occurred after 250, 380, 610, 980 and 1250 hours.
+\begin{enumerate}[topsep=0pt, itemsep = -1ex,label=(\roman*)]
+    \item Assuming the exponential model, construct a 95 percent confidence interval for the mean life of this kind of heater.
+    \item Test the manufacturer's claim that the mean life of these heaters is at least 5000 hours ar 5\% level of significance.
+\end{enumerate} 
+\begin{gather*}
+    \text{Given} \\
+    \chi^2_{0.025}(10) = 20.48, \quad \chi^2_{0.975}(10) = 3.25,\\
+    \chi^2_{0.95}(10) = 3.94, \quad \chi^2_{0.05}(10) = 18.31.
+\end{gather*}
+\ques{3}{b}{25} Let $f(t) = \lambda^at^{a-1}e^{-\lambda t}$ be the Weibull failure density function. Given the censored sample $t_{(1)}<t_{(i)}<\ldots<t_{(d)}$ corresponding to a total sample of size n from Weibull distribution, show that the estimating equations for $\lambda$ and $a$ are respectively
+\[ \hat{\lambda} = \dfrac{d}{\sum_{i=1}^{d-1}t^a_{(i)} + (n - d + 1) t^a_{(d)}} \] and 
+\[ \frac{d}{\hat{a}} = \sum_{i=1}^{d}\log t_{(i)} =  \lambda\left[ \sum_{i=1}^{d-1}t^a_{(i)}\log t_{(i)} + (n - d + 1) t^a_{(d)}\log t_{(d)} \right]\]
+

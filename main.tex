@@ -1,0 +1,102 @@
+\documentclass[a4paper,11pt,oneside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{tgpagella}
+\usepackage{import}
+\usepackage{hyperref}
+\usepackage{mathtools,tasks,tfrupee,empheq}
+\usepackage{sgame,tikz}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{blkarray}
+
+
+\settasks{counter-format=(tsk[r]), label-offset = 1em, column-sep = 1.5em}
+\usepackage[left=1.5in,right=1.5in,top=1in,bottom=1in,nofoot]{geometry}
+\usepackage{nameref}
+\makeatletter
+\renewcommand{\arraystretch}{1.5}
+\newcommand*{\currentname}{\@currentlabelname}
+\makeatother
+\newcommand{\ques}[3]{\textbf{#1.(#2) (#3 marks)}}
+\newcommand{\myline}{\medskip\\}
+\newcommand{\nml}{$N(0,\sigma^2)$ }
+\newcommand{\romcaps}[1]{\MakeUppercase{\romannumeral #1}}
+
+\title{ \textbf{Statistics Paper \romcaps{2}\\ Previous Year Question Paper}}
+\date{\today}
+
+\setlength{\tabcolsep}{7pt}
+%\renewcommand{\chaptermark}[1]{%
+%  \markboth{#1}{}}
+
+\usepackage{makeidx}
+\makeindex
+%\Header footer settings
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+\lhead{\rightmark}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\mainmatter
+\part{A.1 - Industrial Statistics}
+\chapter*{Statistical Quality Control}
+\addcontentsline{toc}{chapter}{\currentname}
+\thispagestyle{empty}
+\input{IS/QC/1main.tex}
+\chapter*{Reliability, Renewal, Life Testing }
+\addcontentsline{toc}{chapter}{\currentname}
+\thispagestyle{empty}
+\input{IS/RLT/1main.tex}
+
+\part{A.2 - Optimization}
+\chapter*{LP, Simplex, Duality; Assignment \\ and Transportation; Games }
+\addcontentsline{toc}{chapter}{\currentname}
+\thispagestyle{empty}
+\input{OPT/LPTAGT/1main.tex}
+\chapter*{Replacement and Inventory}
+\addcontentsline{toc}{chapter}{\currentname}
+\thispagestyle{empty}
+\input{OPT/RepInv/1main.tex}
+\chapter*{Markov Chains and Poisson Process, Queuing}
+\addcontentsline{toc}{chapter}{\currentname}
+\thispagestyle{empty}
+\input{OPT/MarPoi/1main.tex}
+
+\part{B.1 - Economerics and Official Stats}
+\chapter*{Time Series}
+\addcontentsline{toc}{chapter}{\currentname}
+\thispagestyle{empty}
+\input{EcoOSt/TS/1main.tex}
+\chapter*{Econometrics}
+\addcontentsline{toc}{chapter}{\currentname}
+\input{EcoOSt/Econ/1main.tex}
+\thispagestyle{empty}
+\chapter*{Index Numbers}
+\addcontentsline{toc}{chapter}{\currentname}
+\thispagestyle{empty}
+\input{EcoOSt/IN/1main.tex}
+\chapter*{Offical Statistics}
+\addcontentsline{toc}{chapter}{\currentname}
+\thispagestyle{empty}
+\input{EcoOSt/OS/1main.tex}
+
+\part{B.2 - Demography and Psycometry}
+\chapter*{Demography and Vital Statistics}
+\addcontentsline{toc}{chapter}{\currentname}
+\thispagestyle{empty}
+\input{DemPsy/Dem/1main.tex}
+\chapter*{Psychometry and Educational Stats}
+\addcontentsline{toc}{chapter}{\currentname}
+\thispagestyle{empty}
+\input{DemPsy/Psy/1main.tex}
+\end{document}
+    
+    
+    
